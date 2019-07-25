@@ -1,0 +1,10 @@
+name: Velocity deploy action
+description: A GitHub Action for sending deployment information to Velocity.
+author: Code Climate
+inputs:
+  myInput:
+    description: 'Input to use'
+    default: 'world'
+runs:
+  using: "node12"
+  main: "lib/main.js"
