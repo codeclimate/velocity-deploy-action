@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "tsc"
+    "build:dev": "npm install && tsc",
+    "build:production": "npm run-script build:dev && npm prune --production"
   },
   "dependencies": {
     "@actions/core": "file:toolkit/actions-core-0.0.0.tgz",
