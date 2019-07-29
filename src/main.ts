@@ -23,11 +23,7 @@ const report = (deploy: Deploy): Promise<AxiosResponse<any>> =>
   axios.post(
     DEPLOYS_URL,
     snake({
-      branch: deploy.branch,
-      environment: deploy.environment,
-      revision: deploy.revision,
-      version: deploy.version,
-      repositoryUrl: "foo",
+      ...deploy,
       token: process.env.VELOCITY_DEPLOYMENT_TOKEN,
     })
   )
