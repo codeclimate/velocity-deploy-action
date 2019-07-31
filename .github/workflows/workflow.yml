@@ -1,0 +1,12 @@
+on: push
+
+
+jobs:
+  build:
+    name: Build workflow
+
+    steps:
+      send_velocity_deployment:
+      - uses: ./../../
+      - name: Send Velocity deployment
+
