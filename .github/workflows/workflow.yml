@@ -1,12 +1,25 @@
 on: push
 
-
 jobs:
   build:
-    name: Build workflow
+    name: Build stage
+    runs-on: ubuntu-latest
 
     steps:
-      send_velocity_deployment:
-      - uses: ./../../
-      - name: Send Velocity deployment
+      - uses: actions/checkout@master
 
+      - name: Run `npm build:production`
+        run: npm run-script build:production
+
+  report:
+    name: Report stage
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Send Velocity deployment
+        uses: ./
+        with:
+          token: ${{ secrets.VELOCITY_DEPLOYMENT_TOKEN }}

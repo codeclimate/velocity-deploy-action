@@ -38,7 +38,9 @@ bower_components
 build/Release
 
 # Dependency directories
-node_modules/
+# Note: As of now, GitHub requires that actions check in the entire dependency
+# tree.
+# node_modules/
 jspm_packages/
 
 # TypeScript v1 declaration files
