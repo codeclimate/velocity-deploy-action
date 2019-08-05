@@ -23,6 +23,9 @@ There are two possible inputs:
 - `version`: (string) The version tag for the deploy (i.e. `b123`). If this action is triggered on a `deploy` event, it will also try to infer the environment from the event. Please note that the version must be unique for each deployment for the same repository and environment. In other words, if you already deployed a v1.0 for https://github.com/user/project in production, the next deploy for the same repository and environment must have a different version, or no version.
 - `environment`: (string) The environment of the deploy (i.e. `production`).
 
+### Demo
+![Demo](images/demo.gif)
+
 ### Copyright
 
 See [LICENSE](LICENSE.md)
