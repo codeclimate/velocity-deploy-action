@@ -9,6 +9,9 @@ inputs:
     description: "The version tag for the deploy (i.e. `b123`)"
   environment:
     description: "The environment of the deploy (i.e. `production`)"
+branding:
+  icon: mic
+  color: purple
 runs:
   using: "node12"
   main: "lib/main.js"
