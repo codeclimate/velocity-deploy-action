@@ -25,4 +25,4 @@ There are two possible inputs:
 
 ### Copyright
 
-See [LICENSE](LICENSE.md)
+See [LICENSE](LICENSE)
