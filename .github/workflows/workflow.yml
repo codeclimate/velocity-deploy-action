@@ -1,5 +1,12 @@
 on: push
+# For macOS
+$ brew install semgrep
 
+# For Ubuntu/WSL/Linux/macOS
+$ python3 -m pip install semgrep
+
+# To try Semgrep without installation run via Docker
+$ docker run --rm -v "${PWD}:/src" returntocorp/semgrep --help
 jobs:
   build:
     name: Build stage
