@@ -1,6 +1,6 @@
-# Velocity deployment reporter
+# Velocity deployment re-porter codecs version
 
-This is a simple GitHub action that will report deployments to [Velocity](https://codeclimate.com/velocity)
+This is a simple GitHub action that will re-port deployments to [Velocity](https://codeclimate.com/velocity)
 
 ### Usage
 
